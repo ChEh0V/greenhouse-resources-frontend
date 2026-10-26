@@ -1,0 +1,18 @@
+.gridPage {
+  padding-bottom: 20px;
+}
+
+.gridPageTitle {
+  padding: 20px 20px 12px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--greenhouse-navy);
+}
+
+.gridPageCards {
+  padding: 0 20px;
+}
+
+.gridPageEmpty {
+  color: rgba(5, 29, 52, 0.55);
+}

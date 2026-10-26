@@ -1,0 +1,46 @@
+/* панель всегда видна внизу экрана телефона */
+.tabBar {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  width: 390px;
+  transform: translateX(-50%);
+  z-index: 10;
+  height: 76px;
+  flex-wrap: nowrap;
+  background: var(--greenhouse-white);
+  border-top: 1px solid rgba(5, 29, 52, 0.15);
+}
+
+.tabBarCell {
+  flex: 1;
+}
+
+.tabBarItem {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 11px;
+  color: rgba(5, 29, 52, 0.55);
+  cursor: pointer;
+}
+
+.tabBarItem:hover {
+  color: var(--greenhouse-navy);
+}
+
+.tabBarItem.disabled {
+  color: rgba(5, 29, 52, 0.25);
+}
+
+.tabBarItemActive {
+  color: var(--greenhouse-accent);
+  font-weight: 600;
+}
+
+.tabBarIcon {
+  font-size: 16px;
+}

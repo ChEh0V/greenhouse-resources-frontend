@@ -1,0 +1,146 @@
+.feed {
+  position: relative;
+  height: 768px;
+  overflow: hidden;
+  background: var(--greenhouse-navy);
+}
+
+.feedEmpty {
+  padding: 20px;
+  color: rgba(5, 29, 52, 0.55);
+}
+
+.feedVideo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Правая колонка поверх видео */
+.feedSide {
+  position: absolute;
+  right: 12px;
+  bottom: 160px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.feedAction,
+.feedField {
+  width: 56px;
+  min-height: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: var(--greenhouse-radius-pill);
+  background: rgba(5, 29, 52, 0.6);
+  color: var(--greenhouse-white);
+  font-size: 20px;
+}
+
+.feedAction em {
+  font-size: 11px;
+  font-style: normal;
+}
+
+.feedField {
+  border-radius: var(--greenhouse-radius);
+  padding: 6px 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--greenhouse-accent);
+}
+
+.feedField small {
+  font-size: 9px;
+  font-weight: 400;
+  color: var(--greenhouse-white);
+  opacity: 0.8;
+}
+
+.feedNext.btn,
+.feedNext.btn:focus {
+  background: var(--greenhouse-accent);
+  color: var(--greenhouse-navy);
+}
+
+.feedNext.btn:hover {
+  background: var(--greenhouse-white);
+  color: var(--greenhouse-navy);
+}
+
+/* Нижняя часть поверх видео */
+.feedInfo {
+  position: absolute;
+  left: 0;
+  right: 80px;
+  bottom: 0;
+  z-index: 1;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(5, 29, 52, 0.85) 30%);
+  color: var(--greenhouse-white);
+}
+
+.feedTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.feedAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--greenhouse-accent);
+  object-fit: cover;
+}
+
+.feedName {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.feedDescription {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.feedDescriptionExpanded {
+  display: block;
+}
+
+.feedAttributes {
+  margin: 8px 0 0;
+  font-size: 12px;
+  --bs-table-bg: transparent;
+  --bs-table-color: var(--greenhouse-white);
+}
+
+.feedAttributes td:first-child {
+  color: rgba(255, 255, 255, 0.7);
+  padding-left: 0;
+}
+
+.feedMore {
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--greenhouse-accent);
+}

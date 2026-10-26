@@ -1,0 +1,40 @@
+.resourceCard {
+  border: 1px solid rgba(5, 29, 52, 0.15);
+  border-radius: var(--greenhouse-radius);
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.resourceCard:hover {
+  border-color: var(--greenhouse-accent);
+  box-shadow: 0 0 0 1px var(--greenhouse-accent);
+}
+
+.resourceCardImage {
+  height: 110px;
+  object-fit: cover;
+}
+
+.resourceCardBody {
+  padding: 10px 12px 12px;
+}
+
+.resourceCardName {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--greenhouse-navy);
+}
+
+.resourceCardValue {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--greenhouse-accent);
+}
+
+.resourceCardLikes {
+  margin-top: 4px;
+  font-size: 12px;
+  color: rgba(5, 29, 52, 0.55);
+}

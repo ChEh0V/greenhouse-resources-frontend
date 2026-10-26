@@ -1,0 +1,37 @@
+/* Стилистика сайта priva.com: тёмно-синий, белый, зелёный акцент */
+:root {
+  --greenhouse-navy: #051d34;
+  --greenhouse-white: #ffffff;
+  --greenhouse-accent: #00bf72;
+  --greenhouse-radius: 12px;
+  --greenhouse-radius-pill: 999px;
+}
+
+body {
+  margin: 0;
+  background: #eef1f4;
+  color: var(--greenhouse-navy);
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+/* Вертикальный экран как у телефона; при изменении окна меняется только центрирование */
+.greenhouseApp {
+  width: 390px;
+  min-height: 844px;
+  position: relative;
+  padding-bottom: 76px;
+  background: var(--greenhouse-white);
+}
+
+.greenhouseButton.btn {
+  width: 100%;
+  height: 44px;
+  border: none;
+  border-radius: var(--greenhouse-radius-pill);
+  background: var(--greenhouse-accent);
+  color: var(--greenhouse-navy);
+  font-size: 14px;
+  font-weight: 600;
+}

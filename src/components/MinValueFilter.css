@@ -1,0 +1,20 @@
+.minValueFilter {
+  margin: 0 20px 16px;
+  padding: 16px;
+  background: var(--greenhouse-navy);
+  border-radius: var(--greenhouse-radius);
+  color: var(--greenhouse-white);
+}
+
+.minValueFilterLabel {
+  font-size: 13px;
+}
+
+.minValueFilter .greenhouseButton {
+  margin-top: 12px;
+}
+
+.minValueFilter .greenhouseButton:hover {
+  background: var(--greenhouse-white);
+  color: var(--greenhouse-navy);
+}
